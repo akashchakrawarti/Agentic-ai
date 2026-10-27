@@ -23,7 +23,7 @@ load_dotenv()
 # Groq's server address (base_url) instead of OpenAI's, and use a Groq model name.
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
-   LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b") # Free, fast, strong general-purpose model on Groq
+LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b") # Free, fast, strong general-purpose model on Groq
 
 # --- Web research settings (Phase 5) ---
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
