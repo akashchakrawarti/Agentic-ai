@@ -132,7 +132,7 @@ def summarize_research(company_name: str, search_result: dict) -> str:
                     ),
                 },
             ],
-            max_tokens=250,
+            max_tokens=1500,
             temperature=0.3,
         )
         return response.choices[0].message.content
