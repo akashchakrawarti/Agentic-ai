@@ -108,7 +108,7 @@ def generate_outreach(report: dict) -> dict:
                     "content": prompts.OUTREACH_USER_TEMPLATE.format(context=context_summary),
                 },
             ],
-            max_tokens=500,
+            max_tokens=1500,
             temperature=0.6,  # slightly more creative than RAG/research - this is persuasive writing
         )
         raw_text = response.choices[0].message.content
